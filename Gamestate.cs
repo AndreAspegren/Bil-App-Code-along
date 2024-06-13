@@ -9,5 +9,12 @@ namespace Bil_App
     internal static class Gamestate
     {
         internal static int finishLine;
+
+        internal static string sprite = @"
+     ************
+  **             **
+*****           ********
+    ***************
+     **         **";
     }
 }
