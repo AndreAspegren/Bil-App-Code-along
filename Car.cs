@@ -12,7 +12,7 @@
 Distanse: {_distanceDriven} / {Gamestate.finishLine}
 {_sprite}";
 
-        public Car(string sprite, string name, int distanceDriven, int speed)
+        internal Car(string sprite, string name, int distanceDriven, int speed)
         {
             _sprite = sprite;
             _name = name;
