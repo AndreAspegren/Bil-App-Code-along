@@ -8,7 +8,7 @@
         internal int _distanceDriven { get;  set; }
         internal int _speed { get; private set; }
 
-        public string _avatar => $@"Navn: {_name}
+        internal string _avatar => $@"Navn: {_name}
 Distanse: {_distanceDriven} / {Gamestate.finishLine}
 {_sprite}";
 
