@@ -19,15 +19,15 @@ namespace Bil_App
             Gamestate.finishLine = 10000;
             while (cars.All(car => car._distanceDriven < Gamestate.finishLine))
             {
-                displayGame2();
+                display();
                 foreach (var car in cars) car.randomDrive();
                 Thread.Sleep(30);
             }
-            displayGame2();
+            display();
             genResultGame2();
         }
 
-        private void displayGame2()
+        private void display()
         {
             Console.Clear();
             foreach (var car in cars) Console.WriteLine($@"{car._avatar}
