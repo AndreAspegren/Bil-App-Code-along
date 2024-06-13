@@ -24,7 +24,7 @@ namespace Bil_App
                 Thread.Sleep(30);
             }
             display();
-            genResultGame2();
+            genResult();
         }
 
         private void display()
@@ -34,7 +34,7 @@ namespace Bil_App
 ");
         }
 
-        void genResultGame2()
+        void genResult()
         {
             if (cars[0]._distanceDriven > 10000) Console.WriteLine($"{cars[0]._name} vant kappløpet!");
             else if (cars[1]._distanceDriven > 10000) Console.WriteLine($"{cars[1]._name} vant kappløpet!");
