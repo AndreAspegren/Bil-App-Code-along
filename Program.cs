@@ -14,8 +14,7 @@
             else if (input != "1" && input != "2") continue;
            
             Console.WriteLine("Trykk 1 for å begynne på nytt. Hva som helst annet for å avslutte");
-            string input2 = Console.ReadLine();
-            if (input2 != "1") break;
+            if (Console.ReadLine() != "1") break;
         }
     }
 
