@@ -5,7 +5,7 @@
         Random random = new Random();
         internal string _sprite {  get; private set; }
         internal string _name { get; private set; }
-        internal int _distanceDriven { get;  set; }
+        internal int _distanceDriven { get;  private set; }
         internal int _speed { get; private set; }
 
         internal string _avatar => $@"Navn: {_name}

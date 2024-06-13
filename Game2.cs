@@ -19,11 +19,10 @@ namespace Bil_App
             Gamestate.finishLine = 10000;
             while (cars.All(car => car._distanceDriven < Gamestate.finishLine))
             {
-                display();
                 foreach (var car in cars) car.randomDrive();
+                display();
                 Thread.Sleep(30);
             }
-            display();
             genResult();
         }
 

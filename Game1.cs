@@ -17,13 +17,12 @@ namespace Bil_App
             Gamestate.finishLine = 1000;
             while (cars[0]._distanceDriven < Gamestate.finishLine)
             {
-                display();
                 if (cars[0]._distanceDriven < 500) cars[0].accelerate(10);
                 else if (cars[0]._distanceDriven >= 500 && cars[0]._speed > 10) cars[0].accelerate(-10);
                 cars[0].drive();
+                display();
                 Thread.Sleep(30);
             }
-            display();
             Console.WriteLine("Bilen er fremme og har parkert!");
         }
 
