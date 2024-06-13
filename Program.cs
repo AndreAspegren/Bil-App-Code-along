@@ -12,7 +12,7 @@
             if (input == "1") new Game1().firstCarGame();
             else if (input == "2") new Game2().secondCarGame();
             else if (input != "1" && input != "2") continue;
-
+           
             Console.WriteLine("Trykk 1 for å begynne på nytt. Hva som helst annet for å avslutte");
             string input2 = Console.ReadLine();
             if (input2 != "1") break;
